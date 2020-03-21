@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Styrene A Web Bold';
+  src: url('../fonts/StyreneAWeb-Bold.eot');
+  src: local('Styrene A Web Bold'), local('../fonts/StyreneAWeb-Bold'),
+    url('../fonts/StyreneAWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/StyreneAWeb-Bold.woff2') format('woff2'),
+    url('../fonts/StyreneAWeb-Bold.woff') format('woff'),
+    url('../fonts/StyreneAWeb-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Styrene A Web Thin';
+  src: url('../fonts/StyreneAWeb-Thin.eot');
+  src: local('Styrene A Web Thin'), local('../fonts/StyreneAWeb-Thin'),
+    url('../fonts/StyreneAWeb-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/StyreneAWeb-Thin.woff2') format('woff2'),
+    url('../fonts/StyreneAWeb-Thin.woff') format('woff'),
+    url('../fonts/StyreneAWeb-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@mixin thin {
+  font-family: 'Styrene A Web Thin', sans-serif;
+  font-weight: 100;
+}
+@mixin bold {
+  font-family: 'Styrene A Web Bold', sans-serif;
+  font-weight: bold;
+}
