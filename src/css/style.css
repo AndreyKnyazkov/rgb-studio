@@ -441,7 +441,8 @@ body {
 }
 
 .hero {
-  background: url("../img/navbar/navbar-image.jpg");
+  background: url("../img/navbar/navbar-image.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .hero-block {
@@ -464,6 +465,8 @@ body {
 .hero-block__name {
   margin-top: 25px;
   font-size: 50px;
+  font-family: 'Styrene A Web Thin', sans-serif;
+  font-weight: 100;
 }
 
 .hero-block__subtitle {
@@ -512,5 +515,39 @@ body {
   background: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media (max-width: 1200px) {
+  .hero-navbar__menu-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .hero-navbar {
+    padding: 0 40px 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-block {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  .hero-block__title {
+    font-size: 18px;
+  }
+  .hero-block__name {
+    font-size: 42px;
+  }
+  .hero-block__subtitle {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .hero-navbar__block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-navbar__menu {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
