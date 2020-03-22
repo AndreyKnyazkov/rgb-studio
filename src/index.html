@@ -117,9 +117,41 @@
       </div>
   </div>
 </section>
-section.portfolio>.container>.
+<section class="section section_gray portfolio">
+  <div class="container">
+    <div class="portfolio-description">
+      <div class="portfolio-title section-title">Наши работы</div>
+      <div class="portfolio__subtitle section-subtitle">Мы успешно реализовали более ста проектов для наших клиентов, часть из которых вы можете посмотреть в галерее.</div>
+    </div>
+    <!-- Общий контейнер для табов -->
+    <div class="tabs">    
+      <!--  Контейнер с вкладками   -->
+      <ul class="tab-header">
+        <li class="tab-header__item js-tab-trigger active" data-tab="1">Первая</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="2">Вторая</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="3">Третья</li>
+      </ul>    
+      <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+      <ul class="tab-content">
+        <li class="tab-content__item js-tab-content active" data-tab="1">
+          <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU">
+            <img src="img/play.svg" alt="play" class="play-img">
+          </a>
+        </li>
+        <li class="tab-content__item js-tab-content" data-tab="2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum rem laboriosam cum repudiandae natus corrupti?
+        </li>
+        <li class="tab-content__item js-tab-content" data-tab="3">
+          Далеко-далеко за словесными горами.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
