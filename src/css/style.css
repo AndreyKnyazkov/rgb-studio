@@ -405,6 +405,12 @@ body {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 .section {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -553,7 +559,6 @@ body {
   }
   .hero-block__subtitle {
     margin-top: 20px;
-    font-size: 16px;
   }
   .hero-navbar__block {
     -webkit-box-pack: center;
@@ -615,10 +620,7 @@ body {
     margin-left: 20px;
   }
   .services-features__title {
-    font-size: 18px;
-  }
-  .services-features__description {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -628,6 +630,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .services-features__title {
+    font-size: 18px;
   }
 }
 
@@ -712,12 +717,6 @@ body {
   }
   .equipment-imgs img {
     width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .equipment-block__subtitle {
-    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
