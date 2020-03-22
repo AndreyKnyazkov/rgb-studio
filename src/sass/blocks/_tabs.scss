@@ -1,10 +1,11 @@
 .tabs {
+  margin-top: 30px;
   width: 100%;
-  max-width: 500px;
 }
 
 /* Стили для списка вкладок */
 .tab-header {
+  font-size: 16px;
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -16,9 +17,11 @@
 /* Стили для вкладки */
 .tab-header__item {
   padding: 11px 18px;
-  margin-right: 5px;
   cursor: pointer;
   border: 1px solid #ddd;
+}
+.tab-header__item:not(:last-child) {
+  margin-right: 25px;
 }
 
 /* Стили для активной вкладки */
@@ -44,5 +47,76 @@
 
 /* Стили для активного контейнера вкладки */
 .tab-content__item.active {
+  margin-top: 30px;
   display: block;
+}
+
+/* Собственные стили */
+.tab-block {
+  display: flex;
+  
+}
+.tab-block__item {
+  flex-basis: 25%;
+  position: relative;
+}
+.tab-block__item a::before {
+  position: absolute;
+  z-index: 500;
+  height: 108px;
+  width: 132px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: url('../img/portfolio/play.svg');
+}
+.tab-block__item a:hover::before {
+  position: absolute;
+  content: url('../img/portfolio/play.svg');
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+  @media ( max-width: 1200px ) {
+    .tab-block {
+      flex-wrap: wrap;
+    }
+  .tab-block__item {
+    flex-basis: 50%;
+    
+  }
+  .tab-block__item a img {
+    min-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-header {
+    flex-direction: column;
+    align-items: start;
+  }
+  .tab-header__item:not(:first-child) {
+    margin-top: 20px;
+  }
+  .tab-block__item:not(:nth-child(-n+2)) {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .tab-header {
+    flex-direction: column;
+    align-items: start;
+  }
+  .tab-block__item {
+  flex-basis: initial;
+  }
+
+  .tab-block__item:not(:nth-child(-n+1)) {
+    margin-top: 20px;
+  }
+  .tab-block__item a img {
+    width: 1000px;
+  }
 }
