@@ -1,0 +1,59 @@
+.contacts
+  &-block
+    &_text-center
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__subtitle
+      max-width: 100%
+      a
+        text-decoration: underline
+  &-form
+    &__push
+      display: flex
+      justify-content: space-between
+      margin-top: 30px
+    &__button
+      margin-top: 0
+      text-align: center
+    &__social img:not(:last-child)
+      margin-right: 15px
+    &__block
+      &_top
+        display: flex
+        justify-content: space-between   
+        margin-top: 20px   
+    &__input
+      border: 1px solid #fff
+      background: transparent
+      padding: 15px 30px
+      color: #fff
+      &::placeholder
+        font-size: 16px
+      &_1
+        width: 49%
+      &_2
+        width: 49%
+      &_3
+        width: 100%
+      &_4
+        width: 100%
+        height: 100px
+@media ( max-width: 480px )
+  .contacts-form__input::placeholder
+    font-size: 14px
+@media ( max-width: 480px )
+  .contacts-form__push
+    display: flex
+    flex-direction: column-reverse
+  .conctacts-form__block_1
+    flex-direction: column
+  .contacts-form__input_1
+    width: 100%
+  .contacts-form__input_2
+    margin-top: 20px
+    width: 100%
+  .contacts-form__social
+    margin-top: 20px
+  
