@@ -410,6 +410,26 @@ body {
   color: #fff;
 }
 
+.buttons {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 36px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+}
+
+.buttons_center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     font-size: 16px;
@@ -428,7 +448,7 @@ body {
 
 .section-subtitle {
   max-width: 560px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .section-title {
@@ -5111,6 +5131,14 @@ body.compensate-for-scrollbar {
   }
 }
 
+@media (max-width: 1200px) {
+  .partners-blocks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .partners {
     padding-bottom: 0;
@@ -5123,12 +5151,13 @@ body.compensate-for-scrollbar {
   display: flex;
   margin-top: 30px;
   text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .feedback-blocks {
-  width: 358px;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+  width: 31%;
   background: #1D1D1D;
   -webkit-box-shadow: 0px 4px 37px rgba(1, 6, 16, 0.31);
           box-shadow: 0px 4px 37px rgba(1, 6, 16, 0.31);
@@ -5138,19 +5167,33 @@ body.compensate-for-scrollbar {
 .feedback-blocks__img img {
   max-width: 70px;
   min-height: 70px;
-  margin-top: 25px;
+  margin-top: 33px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .feedback-blocks__name {
-  margin-top: 25px;
+  margin-top: 28px;
+  font-size: 20px;
   font-family: 'Styrene A Web Bold', sans-serif;
   font-weight: bold;
 }
 
 .feedback-blocks__text {
   margin: 25px 25px 30px 25px;
+  line-height: 140%;
+}
+
+@media (max-width: 1200px) {
+  .feedback-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback-blocks {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

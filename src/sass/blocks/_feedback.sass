@@ -3,9 +3,9 @@
     display: flex
     margin-top: 30px
     text-align: center
+    justify-content: space-between
     &s
-      width: 358px
-      flex-basis: 33%
+      width: 31%     
       background: #1D1D1D
       box-shadow: 0px 4px 37px rgba(1, 6, 16, 0.31)
       position: relative
@@ -13,11 +13,19 @@
         img
           max-width: 70px
           min-height: 70px
-          margin-top: 25px
+          margin-top: 33px
           border-radius: 50%
           object-fit: cover
       &__name
-        margin-top: 25px
+        margin-top: 28px
+        font-size: 20px
         +bold
       &__text
         margin: 25px 25px 30px 25px
+        line-height: 140%
+@media ( max-width: 1200px )
+  .feedback
+    &-block
+      flex-direction: column
+      &s
+        width: 100%
