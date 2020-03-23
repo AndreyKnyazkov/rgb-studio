@@ -5041,6 +5041,9 @@ body.compensate-for-scrollbar {
   .tab-block__item a img {
     min-width: 90%;
   }
+  .tab-block__item:not(:nth-child(-n+2)) {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -5053,10 +5056,10 @@ body.compensate-for-scrollbar {
         -ms-flex-align: start;
             align-items: start;
   }
-  .tab-header__item:not(:first-child) {
-    margin-top: 20px;
+  .tab-header__item {
+    font-size: 14px;
   }
-  .tab-block__item:not(:nth-child(-n+2)) {
+  .tab-header__item:not(:first-child) {
     margin-top: 20px;
   }
 }
@@ -5080,6 +5083,37 @@ body.compensate-for-scrollbar {
   }
   .tab-block__item a img {
     width: 1000px;
+  }
+}
+
+.partners-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.partners-block__company {
+  margin-right: 20px;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .partners-block__company {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    padding-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

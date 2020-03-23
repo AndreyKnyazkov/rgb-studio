@@ -90,6 +90,9 @@
   .tab-block__item a img {
     min-width: 90%;
   }
+  .tab-block__item:not(:nth-child(-n+2)) {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -97,12 +100,13 @@
     flex-direction: column;
     align-items: start;
   }
+  .tab-header__item {
+    font-size: 14px;
+  }
   .tab-header__item:not(:first-child) {
     margin-top: 20px;
   }
-  .tab-block__item:not(:nth-child(-n+2)) {
-    margin-top: 20px;
-  }
+  
 }
 @media (max-width: 480px) {
   .tab-header {
