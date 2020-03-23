@@ -5116,4 +5116,41 @@ body.compensate-for-scrollbar {
     padding-bottom: 0;
   }
 }
+
+.feedback-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.feedback-blocks {
+  width: 358px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  background: #1D1D1D;
+  -webkit-box-shadow: 0px 4px 37px rgba(1, 6, 16, 0.31);
+          box-shadow: 0px 4px 37px rgba(1, 6, 16, 0.31);
+  position: relative;
+}
+
+.feedback-blocks__img img {
+  max-width: 70px;
+  min-height: 70px;
+  margin-top: 25px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.feedback-blocks__name {
+  margin-top: 25px;
+  font-family: 'Styrene A Web Bold', sans-serif;
+  font-weight: bold;
+}
+
+.feedback-blocks__text {
+  margin: 25px 25px 30px 25px;
+}
 /*# sourceMappingURL=style.css.map */
