@@ -293,6 +293,15 @@
 </section>
 
 <script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $(function () {
+      $("a[href^='#']").click(function () {
+        var _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
+      });
+    });
+</script>
 <script src="js/tabs.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/slick.min.js"></script>
