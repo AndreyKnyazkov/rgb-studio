@@ -5042,6 +5042,11 @@ body.compensate-for-scrollbar {
   margin: 0;
 }
 
+.tab-header__item:hover {
+  background-color: #fff;
+  color: #1D1D1D;
+}
+
 /* Стили для контейнера с содержимым вкладки. По умолчанию скрыт. */
 .tab-content__item {
   display: none;

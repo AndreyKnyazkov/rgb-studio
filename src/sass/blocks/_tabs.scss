@@ -38,6 +38,10 @@
   padding: 0;
   margin: 0;
 }
+.tab-header__item:hover {
+  background-color: #fff;
+  color: $main-black;
+}
 
 /* Стили для контейнера с содержимым вкладки. По умолчанию скрыт. */
 .tab-content__item {
@@ -103,6 +107,7 @@
   .tab-header__item {
     font-size: 14px;
   }
+  
   .tab-header__item:not(:first-child) {
     margin-top: 20px;
   }
