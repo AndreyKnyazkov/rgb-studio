@@ -4736,7 +4736,7 @@ body.compensate-for-scrollbar {
 }
 
 .hero-block {
-  padding-top: 25vh;
+  padding-top: 30vh;
   padding-bottom: 200px;
   max-width: 560px;
   margin: auto;
@@ -4804,6 +4804,9 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 1200px) {
+  .hero-block {
+    padding-top: 25vh;
+  }
   .hero-navbar__menu-item:not(:last-child) {
     margin-right: 10px;
   }
@@ -5070,7 +5073,7 @@ body.compensate-for-scrollbar {
 
 /* Стили для активного контейнера вкладки */
 .tab-content__item.active {
-  margin-top: 30px;
+  margin-top: 10px;
   display: block;
   -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
@@ -5081,9 +5084,24 @@ body.compensate-for-scrollbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tab-block__item a img {
+  display: block;
+  height: 261px;
+  width: 261px;
+}
+
+.tab-block__item a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 
 .tab-block__item {
+  margin-top: 20px;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   position: relative;
@@ -5112,6 +5130,11 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 1200px) {
+  .tab-block__item a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
   .tab-block {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -5121,7 +5144,8 @@ body.compensate-for-scrollbar {
         flex-basis: 50%;
   }
   .tab-block__item a img {
-    min-width: 90%;
+    width: 90%;
+    height: 90%;
   }
   .tab-block__item:not(:nth-child(-n+2)) {
     margin-top: 20px;
@@ -5156,9 +5180,14 @@ body.compensate-for-scrollbar {
         -ms-flex-align: start;
             align-items: start;
   }
+  .tab-block__item a::before {
+    height: 145px;
+    width: 108px;
+  }
   .tab-block__item {
-    -ms-flex-preferred-size: initial;
-        flex-basis: initial;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 300px;
   }
   .tab-block__item:not(:nth-child(-n+1)) {
     margin-top: 20px;
