@@ -398,6 +398,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: #fff;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -430,6 +434,7 @@ body {
   border: 1px solid #fff;
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .buttons:hover {
@@ -4720,7 +4725,8 @@ body.compensate-for-scrollbar {
 .hero {
   padding-top: 70px;
   padding-bottom: 70px;
-  background: url("../img/navbar/navbar-image.jpg") center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1D1D1D), to(rgba(29, 29, 29, 0.39))), url("../img/navbar/navbar-image.jpg") center no-repeat;
+  background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0.39) 100%), url("../img/navbar/navbar-image.jpg") center no-repeat;
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
@@ -4960,6 +4966,13 @@ body.compensate-for-scrollbar {
           justify-content: space-between;
 }
 
+.equipment-imgs img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 261px;
+  height: 261px;
+}
+
 @media (max-width: 1200px) {
   .equipment {
     padding-top: 0;
@@ -4979,12 +4992,14 @@ body.compensate-for-scrollbar {
     margin-top: 30px;
   }
   .equipment-imgs {
+    width: auto;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     margin-top: 30px;
   }
   .equipment-imgs img {
     width: 90%;
+    height: 90%;
   }
 }
 
@@ -5057,6 +5072,8 @@ body.compensate-for-scrollbar {
 .tab-content__item.active {
   margin-top: 30px;
   display: block;
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
 }
 
 /* Собственные стили */
@@ -5169,6 +5186,10 @@ body.compensate-for-scrollbar {
   margin-top: 30px;
 }
 
+.partners-block__company img {
+  width: 70%;
+}
+
 @media (max-width: 1200px) {
   .partners-block__company {
     -ms-flex-preferred-size: auto;
@@ -5187,6 +5208,9 @@ body.compensate-for-scrollbar {
 @media (max-width: 768px) {
   .partners {
     padding-bottom: 0;
+  }
+  .partners-block__company img {
+    width: auto;
   }
 }
 
@@ -5282,7 +5306,7 @@ body.compensate-for-scrollbar {
   text-align: center;
 }
 
-.contacts-form__social img:not(:last-child) {
+.contacts-form__social a:not(:last-child) {
   margin-right: 15px;
 }
 
@@ -5381,7 +5405,7 @@ body.compensate-for-scrollbar {
 
 .hero-navbar.scrolling {
   top: 0;
-  z-index: 99999;
+  z-index: 9999;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;

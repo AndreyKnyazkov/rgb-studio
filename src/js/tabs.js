@@ -4,7 +4,9 @@ $('.js-tab-trigger').click(function () {
 
   $('.js-tab-trigger.active').removeClass('active'); // 1
   $(this).addClass('active'); // 2
+  
 
   $('.js-tab-content.active').removeClass('active'); // 3
   content.addClass('active'); // 4
+  
 });

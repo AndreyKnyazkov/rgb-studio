@@ -135,24 +135,24 @@
       <!--  Контейнер с блоками, которые содержат контент вкладок   -->
       <ul class="tab-content">
         <li class="tab-content__item js-tab-content active" data-tab="1">
-          <div class="tab-block">
+          <div class="tab-block fadeInLeft">
             <div class="tab-block__item">
-              <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU" href="">
+              <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU">
                 <img src="img/portfolio/portfolio-1.jpg">
               </a>
             </div>
             <div class="tab-block__item">
-              <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU" href="">
+              <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU">
                 <img src="img/portfolio/portfolio-2.jpg">
               </a>
             </div>
             <div class="tab-block__item">
-              <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU" href="">
+              <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU">
                 <img src="img/portfolio/portfolio-3.jpg">
               </a>
             </div>
             <div class="tab-block__item">
-              <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU" href="">
+              <a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU">
                 <img src="img/portfolio/portfolio-4.jpg">
               </a>
             </div>
@@ -261,8 +261,8 @@
       <div class="contacts-block_text-center">
         <div class="section-title contacts-block__title">Свяжитесь с нами</div>
         <div class="section-subtitle contacts-block__subtitle"> <p> Если у вас есть какие-то вопросы, мы на них ответим. Оставьте заявку на сайте, мы свяжемся с вами в течение часа. Или
-        напишите нам сами: <a>VK</a>, <a>Facebook</a>, <a>Instagram</a>, <a>Telegram</a></p>        
-        <p><a>+790816783</a>, <a>976732058</a></p></div>
+        напишите нам сами: <a href="https://vk.com/gafurovpro" target="_blank">VK</a>, <a href="https://www.facebook.com/gafurovpro/" target="_blank">Facebook</a>, <a href="https://www.instagram.com/gafurovpro/" target="_blank">Instagram</a>, <a href="https://t.me/gafurovpro" target="_blank">Telegram</a>, <a href="https://api.whatsapp.com/send?phone=998977006371">WhatsApp</a></p>        
+        <p><a href="tel:+998977006371">+998977006371</a>, <a href="tel:+998935886371">+998935886371</a></p></div>
       </div>
       <form action="" calss="contacts-form" id="contacts-form">
         <div class="conctacts-form__block">
@@ -279,29 +279,26 @@
         </div>
         <div class="contacts-form__push">
           <div class="contacts-form__social">
-            <img src="img/concacts/telegram.svg" alt="Телеграм">
-            <img src="img/concacts/instagram.svg" alt="Инстаграм">
-            <img src="img/concacts/facebook.svg" alt="Фейсбук">
+            <a href="https://t.me/gafurovpro" target="_blank">
+            <img src="img/concacts/telegram.svg" alt="Телеграм"></a>
+            <a href="https://vk.com/gafurovpro" target="_blank">
+              <img src="img/concacts/vk.svg" alt="ВКонтакте"></a>
+            <a href="https://www.instagram.com/gafurovpro/" target="_blank">
+            <img src="img/concacts/instagram.svg" alt="Инстаграм"></a>
+            <a href="https://www.facebook.com/gafurovpro/" target="_blank">
+            <img src="img/concacts/facebook.svg" alt="Фейсбук"></a>
+            <a href="https://api.whatsapp.com/send?phone=998977006371">
             <img src="img/concacts/whatsapp.svg" alt="Вацап">
+            </a>
           </div>
-          <div class="buttons contacts-form__button">Отправить заявку</div>
+          <button class="buttons contacts-form__button">Отправить заявку</button>
         </div>
 
       </form>
     </div>
   </div>
 </section>
-
 <script src="js/jquery-3.4.1.min.js"></script>
-<script>
-    $(function () {
-      $("a[href^='#']").click(function () {
-        var _href = $(this).attr("href");
-        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
-        return false;
-      });
-    });
-</script>
 <script src="js/tabs.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/slick.min.js"></script>
