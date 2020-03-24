@@ -394,6 +394,10 @@ textarea:focus {
   outline: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4753,6 +4757,8 @@ body.compensate-for-scrollbar {
 }
 
 .hero-navbar {
+  position: absolute;
+  width: 100%;
   padding: 0 92px 0 92px;
 }
 
