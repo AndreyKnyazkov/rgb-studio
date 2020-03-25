@@ -4853,6 +4853,12 @@ body.compensate-for-scrollbar {
   }
 }
 
+@media (max-height: 640px) {
+  .hero-block {
+    padding-top: 25px;
+  }
+}
+
 .services__title {
   margin-bottom: 14px;
 }
