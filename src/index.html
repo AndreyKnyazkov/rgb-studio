@@ -222,8 +222,7 @@
   <div class="container">
     <div class="partners-title section-title">Нам доверяют</div>
     <div class="partners-subtitle section-subtitle">Более 20-ти лет на рынке видеопроизводства</div>
-    <div class="partners-block">
-      <div class="partners-blocks">
+    <div class="partners-block slider">
         <div class="partners-block__company"><img src="img/partners/UNDP.png" alt="hyatt-regency"></div>
         <div class="partners-block__company"><img src="img/partners/EU.png" alt="huawei"></div>
         <div class="partners-block__company"><img src="img/partners/AGU.png" alt="carlsberg"></div>
@@ -313,6 +312,7 @@
   </div>
 </section>
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/tabs.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/slick.min.js"></script>
@@ -326,7 +326,22 @@
   });
     
   $(document).ready(function () {
-    
+    $('.slider').slick({
+      cssEase: 'linear',
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      arrows: false,
+      autoplay: true,
+      responsive: [          
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+      ]
+    });
     $('#contacts-form').validate({
       rules: {
         username: {
