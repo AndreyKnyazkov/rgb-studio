@@ -4848,6 +4848,9 @@ body.compensate-for-scrollbar {
   .hero-navbar {
     position: relative;
   }
+  .hero-block {
+    position: relative;
+  }
 }
 
 .services__title {
