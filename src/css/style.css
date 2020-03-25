@@ -4800,10 +4800,10 @@ body.compensate-for-scrollbar {
 
 @media (max-width: 1200px) {
   .hero {
-    height: 90vh;
+    height: 100vh;
   }
   .hero-block {
-    padding-top: 24vh;
+    padding-top: 24px;
   }
   .hero-navbar__menu-item:not(:last-child) {
     margin-right: 10px;
