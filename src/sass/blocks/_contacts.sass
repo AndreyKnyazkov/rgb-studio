@@ -23,8 +23,10 @@
       &_top
         display: flex
         justify-content: space-between   
+        position: relative
         margin-top: 20px   
     &__input
+      width: 100%
       border: 1px solid #fff
       background: transparent
       padding: 15px 30px
@@ -40,6 +42,13 @@
       &_4
         width: 100%
         height: 100px
+label#username-error
+  margin-top: 5px
+label#telephone-error
+  margin-top: 5px
+label#mail-error
+    position: absolute
+    margin-top: 50px
 @media ( max-width: 480px )
   .contacts-form__input::placeholder
     font-size: 14px

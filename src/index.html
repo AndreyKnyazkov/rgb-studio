@@ -277,12 +277,15 @@
       </div>
       <form action="" calss="contacts-form" id="contacts-form">
         <div class="conctacts-form__block">
+
           <div class="conctacts-form__block_1 contacts-form__block_top">
-            <input class="contacts-form__input contacts-form__input_1" type="text" placeholder="Имя">
-            <input class="contacts-form__input contacts-form__input_2" type="text" placeholder="Телефон">
+            <div class="contacts-form__input_1">
+            <input class="contacts-form__input " name="username" type="text" placeholder="Имя"></div>
+            <div class="contacts-form__input_2">
+            <input class="contacts-form__input tel" name="telephone" type="text" placeholder="Телефон"></div>
           </div>
           <div class="conctacts-form__block_2 contacts-form__block_top">
-            <input class="contacts-form__input contacts-form__input_3" type="text" placeholder="Почта">
+            <input class="contacts-form__input contacts-form__input_3" name="mail" type="text" placeholder="Почта">
           </div>
           <div class="conctacts-form__block_3 contacts-form__block_top">
             <textarea class="contacts-form__input contacts-form__input_4" type="text" placeholder="Сообщение"></textarea>
@@ -317,10 +320,37 @@
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/wow.min.js"></script>
-  <script>
-      $(function () {
-        new WOW().init();
-      });
-  </script>
+<script>
+  $(function () {
+    new WOW().init();
+  });
+    
+  $(document).ready(function () {
+    
+    $('#contacts-form').validate({
+      rules: {
+        username: {
+          required: true,
+          minlength: 2
+        },
+        telephone: {
+          required: true
+        },
+        mail: {
+          required: false
+        }
+      },
+      messages: {
+        username: {
+          required: "Укажите имя",
+          minlength: jQuery.validator.format("Имя не должно быть короче, чем: {0} символа")
+        },
+        telephone: "Нам нужен ваш телефон",
+        //mail: "Нам нужна ваша почта"
+      }
+    })
+    $(".tel").mask("+999 99 999 99 99");
+  });
+</script>
 </body>
 </html>

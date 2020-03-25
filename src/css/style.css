@@ -5221,6 +5221,10 @@ body.compensate-for-scrollbar {
   margin-top: 50px;
 }
 
+.partners-block__company img {
+  width: 90%;
+}
+
 @media (max-width: 1200px) {
   .partners-block__company {
     -ms-flex-preferred-size: 50%;
@@ -5356,10 +5360,12 @@ body.compensate-for-scrollbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
   margin-top: 20px;
 }
 
 .contacts-form__input {
+  width: 100%;
   border: 1px solid #fff;
   background: transparent;
   padding: 15px 30px;
@@ -5397,6 +5403,19 @@ body.compensate-for-scrollbar {
 .contacts-form__input_4 {
   width: 100%;
   height: 100px;
+}
+
+label#username-error {
+  margin-top: 5px;
+}
+
+label#telephone-error {
+  margin-top: 5px;
+}
+
+label#mail-error {
+  position: absolute;
+  margin-top: 50px;
 }
 
 @media (max-width: 480px) {
