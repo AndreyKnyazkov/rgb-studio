@@ -4800,7 +4800,7 @@ body.compensate-for-scrollbar {
 
 @media (max-width: 1200px) {
   .hero {
-    height: 100vh;
+    height: 90vh;
   }
   .hero-block {
     padding-top: 24vh;
