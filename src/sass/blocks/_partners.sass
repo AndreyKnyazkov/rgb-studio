@@ -3,18 +3,16 @@
     &s
       display: flex
       align-items: center
+      justify-content: space-between
       flex-wrap: wrap
     &__company
-      margin-right: 20px
-      flex-basis: 23%
-      margin-top: 30px
-      text-align: center
+      flex-basis: 20.1%
+      margin-top: 50px
 @media ( max-width: 1200px )
   .partners
     &-block
-      text-align: left
       &__company
-        flex-basis: auto
+        flex-basis: 50%
 @media ( max-width: 1200px )
   .partners
     &-block
@@ -25,6 +23,7 @@
     padding-bottom: 0
     &-block
       &__company
+        flex-basis: initial
 @media ( max-width: 480px )
   .partners
     &-block
