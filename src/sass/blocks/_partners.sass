@@ -8,11 +8,13 @@
       margin-right: 20px
       flex-basis: 23%
       margin-top: 30px
+      text-align: center
       img
         width: 70%
 @media ( max-width: 1200px )
   .partners
     &-block
+      text-align: left
       &__company
         flex-basis: auto
 @media ( max-width: 1200px )
@@ -26,4 +28,11 @@
     &-block
       &__company
         img
-          width: auto
+          width: 70%
+@media ( max-width: 768px )
+  .partners
+    &-block
+      &__company
+        img
+          margin-top: 20px
+          width: 90%

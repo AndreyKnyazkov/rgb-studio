@@ -5213,6 +5213,7 @@ body.compensate-for-scrollbar {
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%;
   margin-top: 30px;
+  text-align: center;
 }
 
 .partners-block__company img {
@@ -5220,6 +5221,9 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 1200px) {
+  .partners-block {
+    text-align: left;
+  }
   .partners-block__company {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
@@ -5239,7 +5243,14 @@ body.compensate-for-scrollbar {
     padding-bottom: 0;
   }
   .partners-block__company img {
-    width: auto;
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-block__company img {
+    margin-top: 20px;
+    width: 90%;
   }
 }
 
