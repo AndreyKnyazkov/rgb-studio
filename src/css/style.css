@@ -4727,7 +4727,12 @@ body.compensate-for-scrollbar {
   padding-bottom: 70px;
   background: -webkit-gradient(linear, left top, left bottom, from(#1D1D1D), to(rgba(29, 29, 29, 0.39))), url("../img/navbar/navbar-image.jpg") center no-repeat;
   background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0.39) 100%), url("../img/navbar/navbar-image.jpg") center no-repeat;
+  background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-block {
@@ -4803,7 +4808,7 @@ body.compensate-for-scrollbar {
     height: 100vh;
   }
   .hero-block {
-    padding-top: 24px;
+    padding-top: 120px;
   }
   .hero-navbar__menu-item:not(:last-child) {
     margin-right: 10px;
@@ -4819,7 +4824,7 @@ body.compensate-for-scrollbar {
     padding-bottom: 70px;
   }
   .hero-block {
-    padding-top: 200px;
+    padding-top: 120px;
     padding-bottom: 0;
   }
   .hero-block__title {
