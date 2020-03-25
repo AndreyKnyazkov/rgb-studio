@@ -4806,7 +4806,7 @@ body.compensate-for-scrollbar {
 
 @media (max-width: 1200px) {
   .hero-block {
-    padding-top: 24vh;
+    padding-top: 100px;
   }
   .hero-navbar__menu-item:not(:last-child) {
     margin-right: 10px;
@@ -4822,7 +4822,7 @@ body.compensate-for-scrollbar {
     padding-bottom: 70px;
   }
   .hero-block {
-    padding-top: 24vh;
+    padding-top: 100px;
     padding-bottom: 0;
   }
   .hero-block__title {
