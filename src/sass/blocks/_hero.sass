@@ -1,7 +1,14 @@
 .hero
   padding-top: 70px
   padding-bottom: 70px
-  background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0.39) 100%), url('../img/navbar/navbar-image.jpg') no-repeat
+  background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0.39) 100%), url('../img/navbar/navbar-image.jpg') center no-repeat
+  background-size: cover
+  height: 100vh
+  height: calc(var(--vh, 1vh) * 100)
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   &-block
     padding-top: 200px
     padding-bottom: 200px
@@ -46,9 +53,8 @@
             transition: 0.2s
 @media (max-width: 1200px)
   .hero
-    height: 100vh
     &-block
-      padding-top: 120px
+      padding-top: 24vh
     &-navbar
       &__menu
         &-item
@@ -61,7 +67,7 @@
     padding-top: 70px
     padding-bottom: 70px
     &-block
-      padding-top: 120px
+      padding-top: 24vh
       padding-bottom: 0
       &__title
         font-size: 18px

@@ -4725,8 +4725,15 @@ body.compensate-for-scrollbar {
 .hero {
   padding-top: 70px;
   padding-bottom: 70px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1D1D1D), to(rgba(29, 29, 29, 0.39))), url("../img/navbar/navbar-image.jpg") no-repeat;
-  background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0.39) 100%), url("../img/navbar/navbar-image.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1D1D1D), to(rgba(29, 29, 29, 0.39))), url("../img/navbar/navbar-image.jpg") center no-repeat;
+  background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0.39) 100%), url("../img/navbar/navbar-image.jpg") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-block {
@@ -4798,11 +4805,8 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 1200px) {
-  .hero {
-    height: 100vh;
-  }
   .hero-block {
-    padding-top: 120px;
+    padding-top: 24vh;
   }
   .hero-navbar__menu-item:not(:last-child) {
     margin-right: 10px;
@@ -4818,7 +4822,7 @@ body.compensate-for-scrollbar {
     padding-bottom: 70px;
   }
   .hero-block {
-    padding-top: 120px;
+    padding-top: 24vh;
     padding-bottom: 0;
   }
   .hero-block__title {
@@ -5207,10 +5211,6 @@ body.compensate-for-scrollbar {
   text-align: center;
 }
 
-.partners-block__company img {
-  width: 70%;
-}
-
 @media (max-width: 1200px) {
   .partners-block {
     text-align: left;
@@ -5233,15 +5233,12 @@ body.compensate-for-scrollbar {
   .partners {
     padding-bottom: 0;
   }
-  .partners-block__company img {
-    width: 70%;
-  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .partners-block__company img {
     margin-top: 20px;
-    width: 90%;
+    width: 100%;
   }
 }
 
