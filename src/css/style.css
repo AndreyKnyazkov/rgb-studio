@@ -4730,9 +4730,6 @@ body.compensate-for-scrollbar {
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .hero-block {
