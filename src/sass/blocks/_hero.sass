@@ -52,8 +52,9 @@
             transition: 0.2s
 @media (max-width: 1200px)
   .hero
-    height: auto
+    height: 100vh
     &-block
+      padding-top: 24vh
     &-navbar
       &__menu
         &-item
@@ -66,7 +67,7 @@
     padding-top: 70px
     padding-bottom: 70px
     &-block
-      padding-top: 100px
+      padding-top: 24vh
       padding-bottom: 0
       &__title
         font-size: 18px
@@ -79,3 +80,7 @@
         justify-content: center
       &__menu
         display: none
+@media (max-width: 480px)
+  .hero
+    &-navbar
+      position: initial
