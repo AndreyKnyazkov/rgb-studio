@@ -4844,6 +4844,12 @@ body.compensate-for-scrollbar {
   }
 }
 
+@media (max-width: 480px) {
+  .hero-navbar {
+    position: relative;
+  }
+}
+
 .services__title {
   margin-bottom: 14px;
 }
