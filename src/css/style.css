@@ -5142,6 +5142,20 @@ body.compensate-for-scrollbar {
   margin: 0;
 }
 
+svg {
+  height: 32px;
+  width: 32px;
+  fill: #fff;
+}
+
+svg:hover {
+  fill: #cccccc;
+}
+
+.facebook {
+  background: url(../img/contacts/facebook.svg);
+}
+
 /* Стили для вкладки */
 .tab-header__item {
   padding: 11px 18px;
@@ -5166,6 +5180,18 @@ body.compensate-for-scrollbar {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+#clean rect {
+  fill: yellow;
+  stroke: green;
+  stroke-width: 4;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+#clean rect:hover {
+  fill: magenta;
 }
 
 .tab-header__item:hover {
@@ -5341,6 +5367,10 @@ body.compensate-for-scrollbar {
           align-items: center;
 }
 
+svg {
+  color: red;
+}
+
 @media (max-width: 1200px) {
   .partners-block__company {
     -ms-flex-preferred-size: 50%;
@@ -5463,6 +5493,10 @@ body.compensate-for-scrollbar {
 .contacts-form__button {
   margin-top: 0;
   text-align: center;
+}
+
+.contacts-form__social a img {
+  width: 32px;
 }
 
 .contacts-form__social a:not(:last-child) {
