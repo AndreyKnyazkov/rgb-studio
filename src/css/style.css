@@ -5354,8 +5354,24 @@ svg:hover {
   margin-top: 50px;
 }
 
+.partners-block__company_1 {
+  text-align-last: left;
+}
+
+.partners-block__company_2 {
+  text-align: center;
+}
+
+.partners-block__company_3 {
+  text-align: center;
+}
+
+.partners-block__company_4 {
+  text-align: right;
+}
+
 .partners-block__company img {
-  width: 90%;
+  width: 70%;
 }
 
 .slick-track {
