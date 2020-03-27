@@ -1,5 +1,7 @@
 $(document).ready(function () {
-  
+  $(window).on('load', function () {
+    $('html body').scrollTop(0);
+  });
   var scrolling = $(".hero-navbar");
  
   $(window).scroll(function () {
@@ -18,7 +20,7 @@ $(document).ready(function () {
       scrollTop: $(_href).offset().top + "px"
     });
     return false;
-  });
+  });  
 });
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
