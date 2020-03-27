@@ -1,6 +1,7 @@
 $(document).ready(function () {
-  $(window).on('load', function () {
-    $('html body').scrollTop(0);
+  //прокрутка наверх страницы
+  $(window).on('beforeunload', function () {
+    $(window).scrollTop(0);
   });
   var scrolling = $(".hero-navbar");
  
