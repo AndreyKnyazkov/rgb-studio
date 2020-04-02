@@ -2081,6 +2081,24 @@ svg:hover {
   display: block;
 }
 
+.tab-block__item a::before {
+  position: absolute;
+  z-index: 500;
+  height: 108px;
+  width: 132px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: url("../img/portfolio/play.svg");
+}
+
+.tab-block__item a:hover::before {
+  position: absolute;
+  content: url("../img/portfolio/play.svg");
+}
+
 .tab-block__item a {
   -webkit-transition: 1s;
   transition: 1s;
