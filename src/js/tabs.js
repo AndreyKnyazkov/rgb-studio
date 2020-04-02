@@ -10,3 +10,39 @@ $('.js-tab-trigger').click(function () {
   content.addClass('active'); // 4
   
 });
+
+[
+  {
+    "caption": "Заголовок услуги",
+    "fields": [
+      {
+        "field": "img",
+        "caption": "Изображение",
+        "inputTVtype": "image",
+        "sourceFrom": "migx"
+      },
+      {
+        "field": "alt",
+        "caption": "Описание изображения для поисковых систем",
+        "inputTVtype": "textarea"
+      },{
+        "field": "href",
+        "caption": "Ссылка на видео",
+        "inputTVtype": "textarea"
+      }
+    ]
+  }
+]
+
+[{
+  "sourceFrom": "migx",
+  "header": "Заголовок услуги",
+  "dataIndex": "img"
+}, {
+    "header": "Описание изображения для поисковых систем",
+    "dataIndex": "alt"
+  }, {
+  "header": "Ссылка на видео",
+    "dataIndex": "href"
+}
+]

@@ -64,6 +64,10 @@ svg:hover {
   fill: magenta;
 }
 
+.tab-block__item span {
+  display: none;
+}
+
 .tab-header__item:hover {
   background-color: #fff;
   color: $main-black;
@@ -88,37 +92,32 @@ svg:hover {
   flex-wrap: wrap; 
 }
 .tab-block__item a img {
+  transition: 1s;
   display: block;
-  height: 261px;
-  width: 261px;
+  width: 354px;
+  height: 199px;
 }
+
 .tab-block__item a img {
   object-fit: cover;
   display: block;
 }
+
+.tab-block__item a {
+  transition: 1s;
+  display: block;
+}
+
+.tab-block__item a:hover {
+  transform: scale(1.1);
+}
 .tab-block__item {
   margin-top: 20px;
-  flex-basis: 25%;
+  flex-basis: 33.3%;
   position: relative;
 }
-.tab-block__item a::before {
-  position: absolute;
-  z-index: 500;
-  height: 108px;
-  width: 132px;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  content: url('../img/portfolio/play.svg');
-}
-.tab-block__item a:hover::before {
-  position: absolute;
-  content: url('../img/portfolio/play.svg');
-  animation-name: bounceIn;
-  animation-duration: 1s;
-}
+
+
 
   @media ( max-width: 1200px ) {
     .tab-block__item a {
@@ -130,12 +129,8 @@ svg:hover {
       flex-wrap: wrap;
     }
   .tab-block__item {
-    flex-basis: 50%;
-    
-  }
-  .tab-block__item a img {
-    width: 90%;
-    height: 90%;
+    flex-basis: 31%;
+    margin-right: 16px;    
   }
   .tab-block__item:not(:nth-child(-n+2)) {
     margin-top: 20px;
@@ -143,6 +138,13 @@ svg:hover {
 }
 
 @media (max-width: 768px) {
+  .tab-block__item {
+    flex-basis: 48%;
+    margin-right: 0px;
+  }
+  .tab-block__item:nth-child(odd) {
+    margin-right: 18px;
+  }
   .tab-header {
     flex-direction: column;
     align-items: start;
@@ -157,17 +159,15 @@ svg:hover {
   
 }
 @media (max-width: 480px) {
+  .tab-block__item:nth-child(odd) {
+    margin-right: 0;
+  }
   .tab-header {
     flex-direction: column;
     align-items: start;
   }
-  .tab-block__item a::before {
-    height: 145px;
-    width: 108px;
-   }
   .tab-block__item {
     flex-basis: 100%;
-    height: 300px;
   }
 
   .tab-block__item:not(:nth-child(-n+1)) {
